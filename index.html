@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IDEE 1.1 - Beveiligde Demo</title>
+   <script>
+       function checkPassword() {
+           var password = prompt("Voer het wachtwoord in:");
+           if (password !== "1986") { // Verander '1986' naar jouw gewenste wachtwoord
+               alert("Onjuist wachtwoord. Toegang geweigerd!");
+               window.location.href = "https://google.com"; // Stuur foute gebruikers ergens anders heen
+           }
+       }
+   </script>
+</head>
+<body onload="checkPassword()">
+   <h1>Welkom bij IDEE 1.1</h1>
+   <p>Hier kun je een vraagstuk invoeren en zien hoe het wordt verwerkt.</p>
+
+   <form>
+       <label for="vraagstuk">Voer je vraagstuk in:</label>
+       <textarea id="vraagstuk" name="vraagstuk" required></textarea>
+       <button type="submit">Verzenden</button>
+   </form>
+</body>
+</html>
