@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>IDEE 1.1 - Beveiligde Demo</title>
-   <script>
-       function checkPassword() {
-           var password = prompt("Voer het wachtwoord in:");
-           if (password !== "1986") { // Verander '1986' naar jouw gewenste wachtwoord
-               alert("Onjuist wachtwoord. Toegang geweigerd!");
-               window.location.href = "https://google.com"; // Stuur foute gebruikers ergens anders heen
-           }
-       }
-   </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformbedrijf.nl - Welkom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .box {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+        .button {
+            display: block;
+            width: 80%;
+            padding: 15px;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+        .blue { background-color: lightblue; }
+        .green { background-color: lightgreen; }
+        .gray { background-color: lightgray; }
+    </style>
 </head>
-<body onload="checkPassword()">
-   <h1>Welkom bij IDEE 1.1</h1>
-   <p>Hier kun je een vraagstuk invoeren en zien hoe het wordt verwerkt.</p>
+<body>
+    <div class="container">
+        <h1><strong>Platformbedrijf.nl - Welkom</strong></h1>
+        <div class="box">🚀 Innovatief platform voor bedrijven</div>
 
-   <form>
-       <label for="vraagstuk">Voer je vraagstuk in:</label>
-       <textarea id="vraagstuk" name="vraagstuk" required></textarea>
-       <button type="submit">Verzenden</button>
-   </form>
+        <a href="#" class="button blue">ℹ️ Informatie voor bedrijven</a>
+        <a href="#" class="button green">📝 Registreren als bedrijf</a>
+        <a href="#" class="button gray">🔑 Inloggen</a>
+
+        <div class="box">
+            📢 Laat experts meedenken over uw bedrijfsproblemen <br>
+            💡 Efficiënte en innovatieve oplossingen binnen handbereik!
+        </div>
+    </div>
 </body>
 </html>
