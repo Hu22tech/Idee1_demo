@@ -1,0 +1,150 @@
+/* Algemene stijl voor de pagina */
+/* Zorgt ervoor dat de hele pagina een lichtblauwe achtergrond krijgt */
+body {
+    background-color: #81D4FA; /* Lichtblauw */
+    margin: 0; /* Zorgt ervoor dat er geen ongewenste marges zijn */
+    padding: 0;
+    font-family: Arial, sans-serif; /* Optioneel: een nette letterstijl */
+    text-align: center; /* Centreert de tekst */
+}
+/*Stijl voor de hoofdtitel (h1) */
+h1 {
+    text-align: center;
+}
+
+/* Centraal uitlijnen */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 90%; /* Pas dit aan voor de gewenste breedte */
+    max-width: 500px;
+    margin: auto; /* Zorgt voor centreren */
+    text-align: center; /* Centreert de tekst */
+}
+
+/* Zorg dat alle invulvelden gecentreerd blijven */
+.form  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreer de invulvelden */
+}
+
+/* Formuliergroepen voor nette structuur */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels netjes boven de invulvelden */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Standaard stijl voor alle invulvelden */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Kleine tekstvelden */
+.input-small {
+    height: 40px;
+}
+
+/* Medium tekstvelden */
+.input-medium {
+    height: 80px;
+}
+
+/* Grote tekstvelden */
+.input-large {
+    height: 150px;
+    resize: vertical; /* Gebruiker mag de grootte aanpassen */
+}
+
+/* Labels netjes boven de invulvelden en links uitgelijnd */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 500px
+}
+
+/* Standaard knop-stijl */
+.button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    background-color: lightgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Hover-effect voor knop */
+.button:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Stijl voor grijze terug-knop */
+.button.gray {
+    background-color: lightgray;
+}
+
+.button.gray:hover {
+    background-color: darkgray;
+}
+
+/* Stijl voor rode terug-knop */
+.button.red {
+    background-color: lightcoral;
+}
+
+.button.red:hover {
+    background-color: darkred;
+ 
+}
+
+@media (max-width: 768px) {
+    /* Maak formulier en knoppen breder */
+    .form-container {
+        width: 95%;
+    }
+
+    input, .button {
+        font-size: 18px; /* Grotere tekst voor touchscreens */
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 22px; /* Zorgt dat de titel goed leesbaar blijft */
+        text-align: center;
+    }
+}
